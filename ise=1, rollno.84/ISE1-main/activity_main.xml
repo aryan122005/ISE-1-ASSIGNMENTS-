@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="139dp"
+        android:layout_height="49dp"
+        android:text="ISE-1"
+        android:textSize="34dp"
+        android:background="@drawable/cornerradius"
+
+
+        android:textStyle="bold"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <LinearLayout
+        android:layout_width="355dp"
+        android:layout_height="442dp"
+        android:background="@drawable/linearback"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.5">
+
+
+        <ImageButton
+            android:id="@+id/msgbtn"
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:background="@drawable/imageback"
+            android:src="@drawable/message"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/phonebtn"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/imageback"
+            android:src="@drawable/phone"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/whatbtn"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/imageback"
+            android:src="@drawable/whatsapp"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
